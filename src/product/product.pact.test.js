@@ -17,7 +17,8 @@ describe("Pact Verification", () => {
       providerBaseUrl: "http://localhost:8080",
       providerVersion: process.env.TRAVIS_COMMIT,
       providerVersionTag: process.env.TRAVIS_BRANCH,
-      verbose: process.env.VERBOSE === 'true'
+      verbose: process.env.VERBOSE === 'true',
+      enablePending: true
     }
 
     // For builds triggered by a 'contract content changed' webhook,
